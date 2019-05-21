@@ -4,11 +4,45 @@ min-height: 100vh;
 flex-direction: column;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+  text-decoration: none;
+
+}
+
 .container {
   text-align: center;
 display: flex;
 align-content: space-around;
 flex-direction: column;
+}
+
+.userReq {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: space-around;
+  border: 3px solid grey;
+  width: 99%;
+}
+
+.userInfoReq {
+display: flex;
+flex-direction: row;
+align-items: baseline;
+width: 100%;
+}
+
+.dropdown-menu {
+display: none;
+}
+
+.date{
+  align-self: flex-end;
 }
 
 nav {
@@ -17,10 +51,10 @@ nav {
 }
 
 main {
-  flex: 1;
-  flex-grow: 10;
   display: flex;
+  flex: 1;
   flex-direction: column;
+  border: 3px solid grey;
 }
 
 section {
@@ -34,8 +68,9 @@ align-items: center;
 footer {
 border: 5px solid black;
 }
-.home, .requests, .response {
-border-top: 1px solid grey;
+
+ .requests, .response {
+border-bottom: 1px solid grey;
 
 }
 
@@ -48,24 +83,71 @@ border-top: 1px solid grey;
 
   }
 
+.container{
+ flex-direction: row;
+border: 5px solid grey;
+margin: 50px;
+justify-content: space-between;
+  }
+
+.makeSubmission {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.dropdown-menu {
+  display: inline-block;
+  align-self: flex-end;
+  border: 5px solid grey;
+  margin: 10px 25px;
+
+}
+
+
+  .dropdown {
+  position: relative;
+  display: inline-block;
+  border: 5px solid grey;
+
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    border: 3px solid grey;
+    min-width: 160px;
+    padding: 12px 16px;
+    z-index: 1;
+    left: -95%;
+    background-color: white;
+  }
+
+  .dropdown:hover .dropdown-content {
+  display: block;
+  }
+
+.hamburger {
+
+  width: 100px;
+  height: 50px;
+
+}
+
   .main-title {
 align-self: flex-start;
 margin-left: 25px;
+border: 5px solid grey;
   }
 
-  .container{
-border-bottom: 5px solid grey;
-margin: 50px;
-  }
-
-  main {
-flex-direction: column;
+.makeSubmission{
 margin: 0 15%;
 }
 
-section {
-}
-
-
+  main {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin: 0 20%;
 
 }
